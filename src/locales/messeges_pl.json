@@ -1,0 +1,93 @@
+{
+    "common.to.now": " do teraz",
+    "experience.content": "Pentacomp Systemy informatyczne S.A.",
+    "footer": "Stworzona przez ",
+    "nav.contact": "Kontakt",
+    "nav.experience": "Doświadczenie",
+    "nav.home": "Strona główna",
+    "nav.projects": "Projekty",
+    "title.experience": "Doświadczenie zawodowe",
+    "title.technologies": "Znane technologie / biblioteki",
+    "title.technologies.beginner": "Podstawowa znajomość technologii / bibliotek",
+
+    "card.javaScript.title": "JavaScript",   
+    "card.javaScript.description": "Opis JavaScript",   
+    "card.javaScript.content": "Treść JavaScript",
+
+    "card.javaScript.es6.title": "JavaScript ES6",   
+    "card.javaScript.es6.description": "Opis JavaScript ES6",   
+    "card.javaScript.es6.content": "Treść JavaScript ES6",
+
+    
+    "card.react.title": "React.js",   
+    "card.react.description": "Opis React.js",   
+    "card.react.content": "Treść React.js",
+
+    "card.typeScript.title": "TypeScript",   
+    "card.typeScript.description": "Opis TypeScript",   
+    "card.typeScript.content": "Treść TypeScript",
+
+    "card.react.ts.title": "React + TypeScript",   
+    "card.react.ts.description": "Opis React + TypeScript",   
+    "card.react.ts.content": "Treść React + TypeScript",
+
+    "card.html.title": "HTML5",   
+    "card.html.description": "Opis HTML5",   
+    "card.html.content": "Treść HTML5",
+
+    "card.git.title": "Git",   
+    "card.git.description": "Opis Git",   
+    "card.git.content": "Treść Git",
+
+    "card.sass.title": "SASS/SCSS",   
+    "card.sass.description": "Opis SASS/SCSS",   
+    "card.sass.content": "Treść SASS/SCSS",
+
+    "card.css.title": "CSS3",   
+    "card.css.description": "Opis SASS/SCSS",   
+    "card.css.content": "Treść SASS/SCSS",
+
+    "card.rwd.title": "Responsive Web Design",   
+    "card.rwd.description": "Opis RWD",   
+    "card.rwd.content": "Treść RWD",
+
+    "card.bootstrap.title": "Bootstrap",   
+    "card.bootstrap.description": "Opis Bootstrap",   
+    "card.bootstrap.content": "Treść Bootstrap",
+
+    "card.antd.title": "Ant Design - React",   
+    "card.antd.description": "Opis Ant Design - React",   
+    "card.antd.content": "Treść Ant Design - React",
+
+    "card.java.title": "Java",   
+    "card.java.description": "Opis Java",   
+    "card.java.content": "Treść Java",
+
+    "card.vue.title": "Vue.js",   
+    "card.vue.description": "Opis Vue.js",   
+    "card.vue.content": "Treść Vue.js",
+
+    "card.angular.title": "Angular",   
+    "card.angular.description": "Opis Angular",   
+    "card.angular.content": "Treść Angular",
+
+    "card.jest.title": "Jest",   
+    "card.jest.description": "Opis Jest",   
+    "card.jest.content": "Treść Jest",
+
+    "card.react.native.title": "React-Native",   
+    "card.react.native.description": "Opis React-Native",   
+    "card.react.native.content": "Treść React-Native",
+
+    "card.webpack.title": "Webpack",   
+    "card.webpack.description": "Opis Webpack",   
+    "card.rwebpack.content": "Treść Webpack",
+
+    "card.sql.title": "SQL",   
+    "card.sql.description": "Opis SQL",   
+    "card.sql.content": "Treść SQL",
+
+    "card.liqui.base.title": "Liquibase",   
+    "card.liqui.base.description": "Opis Liquibase",   
+    "card.liqui.base.content": "Treść Liquibase"
+}
