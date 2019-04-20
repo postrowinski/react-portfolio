@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
     <head>
+        <% if (webpackConfig.mode != 'production') { %>
         <base href="/" />
+        <% } %>
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <title>Portfolio - Przemysław Ostrowiński</title>
