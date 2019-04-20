@@ -1,3 +1,5 @@
+import 'babel-polyfill';
+// tslint:disable-next-line:ordered-imports
 import { Col, Layout, Row } from 'antd';
 import 'antd/dist/antd.less';
 import * as React from "react";
