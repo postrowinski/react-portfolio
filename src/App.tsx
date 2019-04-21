@@ -21,12 +21,8 @@ const App: React.FC<{}> = (): JSX.Element => (
                 <Header>
                     <div className='container'>
                         <Row type='flex' justify='space-between' align='middle'>
-                            <Col>
-                                <AppMenu />
-                            </Col>
-                            <Col>
-                                <LanguageSwitch />
-                            </Col>
+                            <AppMenu />
+                            <LanguageSwitch />
                         </Row>
                     </div>
                 </Header>

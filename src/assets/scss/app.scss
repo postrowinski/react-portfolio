@@ -36,3 +36,15 @@ html, body {
     height: 46px;
     color: rgba(255, 255, 255, 0.65);
 }
+
+.horizontal-menu {
+    @media (max-width: $screen-md) {
+       display: none;
+    }
+}
+
+.drawer-menu {
+    @media (min-width: $screen-md) {
+        display: none;
+     }
+}
