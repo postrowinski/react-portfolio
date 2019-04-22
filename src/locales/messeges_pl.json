@@ -6,6 +6,7 @@
     "nav.experience": "Doświadczenie",
     "nav.home": "Strona główna",
     "nav.projects": "Projekty",
+    "nav.progress": "Mój postęp",
     "title.experience": "Doświadczenie zawodowe",
     "title.technologies": "Znane technologie / biblioteki",
     "title.technologies.beginner": "Podstawowa znajomość technologii / bibliotek",
@@ -89,5 +90,19 @@
 
     "card.liqui.base.title": "Liquibase",   
     "card.liqui.base.description": "Opis Liquibase",   
-    "card.liqui.base.content": "Treść Liquibase"
+    "card.liqui.base.content": "Treść Liquibase",
+
+    "progress.1": "Moja pierwsza styczność z frontendwem",
+    "progress.2": "Pierwsze kroki w HTML5 i CSS3",
+    "progress.3": "Moje Pierwsze mini projekty z wykorzystaniem HTML5 i CSS3",
+    "progress.4": "Pierwsze kroki we frameworku CSSa - Bootstrap",
+    "progress.5": "Kurs zorganizowany przez ALX: \"Tworzenie stron WWW\", gdzie rozwinołem swoję umiejętności z HTML5, CSS3, Bootstrap, oraz poznałem podstawy JavaScriptu oraz Responsive Web Design",
+    "progress.6": "Zaczynam uczyć się z kursów online, takich jak codeacademy",
+    "progress.7": "Pierwsze kroki w jQuery",
+    "progress.8": "Zaczynam tworzyć bardziej zaawanstowany mini projekty z wykorzystaniem HTML5, CSS3, RWD, jQuery",
+    "progress.9": "Bootcamp Kodilla, gdzie rozwijam swoje dotychczasowe umiejęctości oraz poznaję SASS/SCSS, Git i bardziej zaawansowany JavaScript. W trakcie kursu tworzę około 10 mini projektów Photoshop => HTML, wszystkie te projekty są w pełni responsywne",
+    "progress.10": "Zaczynam szykać pracy jako front-end developer",
+    "progress.11": "Zaczynam eksperymentować z frameworkami JavaScript: React.js oraz Angular.js, jednak nie idzie mi najlepiej i postanawiam, skupić się na poprawieniu umiejtności w czystym JavaScripcie",
+    "progress.12": "Skupiając się na JavaScripcie rozwiązuje dziesiątki jak nie setki mniejszych i większych zadań portalu codewars",
+    "progress.13": "Podczas rozwiązywania zadań za Codewars zaczynam wykorzystywać składnie ES6"
 }

@@ -6,6 +6,7 @@
     "nav.experience": "Experience",
     "nav.home": "Home",
     "nav.projects": "Projects",
+    "nav.progress": "My progress",
     "title.experience": "Experience",
     "title.technologies": "Known technologies / libraries",
     "title.technologies.beginner": "Basic knowledge of technology / libraries",
@@ -88,5 +89,20 @@
 
     "card.liqui.base.title": "Liquibase",   
     "card.liqui.base.description": "Description Liquibase",   
-    "card.liqui.base.content": "Content Liquibase"
+    "card.liqui.base.content": "Content Liquibase",
+
+    "progress.1": "My first contact with the frontend",
+    "progress.2": "First steps in HTML5 and CSS3",
+    "progress.3": "My first mini projects using HTML5 and CSS3",
+    "progress.4": "First steps in CSS framework - Bootstrap",
+    "progress.5": "Course organized by ALX: \"Tworzenie stron WWW\", where I developed my skills with HTML5, CSS3, Bootstrap, and learned the basics of JavaScript and Responsive Web Design",
+    "progress.6": "I'm starting to learn online courses such as codeacademy or freeCodeCamp",
+    "progress.7": "First steps in jQuery",
+    "progress.8": "I'm starting to create more advanced mini projects using HTML5, CSS3, RWD, jQuery",
+    "progress.9": "Kodilla Bootcamp, where I develop my previous skills and get to know SASS / SCSS, Git and more advanced JavaScript. During the course I create about 10 mini projects Photoshop => HTML, all of these projects are fully responsive",
+    "progress.10": "I'm starting to get a job as a front-end developer",
+    "progress.11": "I'm starting to experiment with JavaScript frameworks: React.js and Angular.js, but I'm not doing well and I deside to focus on vanilla JavaScript",
+    "progress.12": "Focusing on JavaScript, it solves dozens of non-hundreds of smaller and larger tasks on codewars website",
+    "progress.13": "When solving tasks for Codewars, I begin to use ES6 syntax"
+    
 }

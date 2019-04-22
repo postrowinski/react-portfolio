@@ -1,9 +1,9 @@
-import { Icon, Menu, Button, Drawer } from 'antd';
+import { Button, Drawer, Icon, Menu } from 'antd';
 import { ClickParam } from 'antd/lib/menu';
 import * as React from "react";
 import { FormattedMessage, InjectedIntlProps, injectIntl } from 'react-intl';
 import { Link, RouteComponentProps, withRouter } from "react-router-dom";
-import { PATHS } from './paths';
+import * as PATHS from './paths';
 
 interface IMenuItem {
     path: string;
@@ -15,6 +15,10 @@ const navData: IMenuItem[] = [
     {
         label: 'nav.home',
         path: PATHS.home
+    },
+    {
+        label: 'nav.progress',
+        path: PATHS.progress
     },
     {
         label: 'nav.experience',
@@ -30,7 +34,7 @@ const navData: IMenuItem[] = [
     },
 ];
 
-const MenuItem: any = Menu.Item;
+const  { Item: MenuItem } = Menu;
 
 interface State {
     current: string;

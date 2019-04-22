@@ -1,13 +1,6 @@
-interface Paths {
-    contact: string;
-    experience: string;
-    home: string;
-    projects: string;
-}
 
-export const PATHS: Paths = {
-    contact: '/contact/',
-    experience: '/experience/',
-    home: '/',
-    projects: '/projects/'
-};
+export const home: string = '/';
+export const experience: string = '/experience/';
+export const progress: string = '/progress/';
+export const projects: string = '/projects/';
+export const contact: string = '/contact/';
