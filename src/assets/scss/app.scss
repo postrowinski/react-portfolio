@@ -13,7 +13,7 @@ html, body {
 
 .container {
     max-width: 1200px;
-    padding: 0 15px;
+    padding: 0 20px;
     margin: 0 auto;
     display: block;
 }
@@ -28,6 +28,13 @@ html, body {
     padding-top: 20px;
 }
 
+.ant-timeline-item {
+    font-size: 18px;
+    @media (max-width: $screen-lg) {
+        font-size: 14px;
+    }
+}
+
 .app-footer {
     background: #001529;
     display: flex;
@@ -38,13 +45,13 @@ html, body {
 }
 
 .horizontal-menu {
-    @media (max-width: $screen-md) {
+    @media (max-width: $screen-lg) {
        display: none;
     }
 }
 
 .drawer-menu {
-    @media (min-width: $screen-md) {
+    @media (min-width: $screen-lg) {
         display: none;
      }
 }

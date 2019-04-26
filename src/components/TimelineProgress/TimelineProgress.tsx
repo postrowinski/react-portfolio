@@ -2,46 +2,45 @@ import { Icon, Timeline } from 'antd';
 import { IconProps } from 'antd/lib/icon';
 import * as _ from 'lodash';
 import * as React from 'react';
-import { FormattedMessage, InjectedIntlProps, injectIntl } from 'react-intl';
+import { FormattedMessage } from 'react-intl';
 import { Item } from './TimelineProgress.data';
 
-const { Item: TimeLineItem} = Timeline;
+const { Item: TimeLineItem } = Timeline;
 
-interface Props extends InjectedIntlProps {
+interface Props {
     data: Item[];
     messagesPrefix: string;
 }
 
-class TimelineProgress extends React.Component<Props, {}> {
-    private renderDot = (dot?: IconProps): JSX.Element | undefined => {
+declare type FunctionRenderDot = (dot?: IconProps) => JSX.Element;
+declare type FunctionRenderTimeLineItem = (item: Item, index: number) => JSX.Element;
+
+export const TimelineProgress: React.FC<Props> = (props: Props): JSX.Element => {
+    const {data, messagesPrefix} = props;
+    const renderDot: FunctionRenderDot = (dot?: IconProps): JSX.Element => {
         if (_.isNil(dot)) {
             return undefined;
         }
         return (
             <Icon {...dot} />
         );
-    }
+    };
 
-    private renderTimeLineItem = (item: Item, index: number): JSX.Element => {
+    const renderTimeLineItem: FunctionRenderTimeLineItem = (item: Item, index: number): JSX.Element => {
         const { color, date, dot } = item;
         return (
-            <TimeLineItem key={index} color={color} dot={this.renderDot(dot)}>
-                <FormattedMessage id={`${this.props.messagesPrefix}.${index + 1}`} />
+            <TimeLineItem key={index} color={color} dot={renderDot(dot)}>
+                <FormattedMessage id={`${messagesPrefix}.${index + 1}`} />
                 <span style={{paddingLeft: 6, fontWeight: 700}}>
                     {date}
                 </span>
             </TimeLineItem>
         );
-    }
+    };
 
-    public render(): JSX.Element {
-        const { data } = this.props;
-        return (
-            <Timeline mode='alternate'>
-                {data.map((item: Item, index: number) => this.renderTimeLineItem(item, index))}
-            </Timeline>
-        );
-    }
-}
-
-export default injectIntl(TimelineProgress);
+    return (
+        <Timeline mode='alternate'>
+            {data.map((item: Item, index: number) => renderTimeLineItem(item, index))}
+        </Timeline>
+    );
+};

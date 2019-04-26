@@ -94,5 +94,29 @@ export const timelineProgressData: Item[] = [
             },
             type: 'rise'
         },
+    },
+    {
+        color: 'green',
+        date: '2017-10'
+    },
+    {
+        date: '2017-11',
+    },
+    {
+        date: '2017-11 / 2017-12',
+    },
+    {
+        color: 'red',
+        date: '2017-12-13'
+    },
+    {
+        date: '2017-12-21',
+        dot: {
+            style: {
+                color: 'goldenrod',
+                fontSize: 28
+            },
+            type: 'trophy'
+        }
     }
 ];

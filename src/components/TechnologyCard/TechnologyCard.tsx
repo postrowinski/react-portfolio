@@ -85,7 +85,7 @@ class TechnologyCard extends React.Component<Props, State> {
         const cover: JSX.Element = readMore ? this.renderContent(content) : this.renderImg(alt, src);
         return (
             <Card
-                style={{ width: 280, marginRight: 12, marginBottom: 20 }}
+                style={{ width: 270, marginRight: 12, marginBottom: 20 }}
                 cover={cover}
                 actions={[this.renderInfoButton()]}
             >

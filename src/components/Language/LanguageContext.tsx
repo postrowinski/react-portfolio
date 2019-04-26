@@ -1,3 +1,4 @@
+import * as _ from 'lodash';
 import * as React from "react";
 import {addLocaleData, IntlProvider} from "react-intl";
 
@@ -33,6 +34,9 @@ export const Context: React.Context<LanguageContext> = React.createContext({
 
 addLocaleData([...en, ...pl]);
 
+const langaugeStorageKey: string = 'language';
+const storageLangauge: string = localStorage.getItem(langaugeStorageKey);
+
 class IntlProviderWrapper extends React.Component<{}, State> {
     private switchLanguage = (locale: string, messages: string): void => {
         this.setState({
@@ -40,11 +44,12 @@ class IntlProviderWrapper extends React.Component<{}, State> {
             messages,
             switchLanguage: this.switchLanguage
         });
+        localStorage.setItem(langaugeStorageKey, locale);
     }
 
     public state: State = {
-        locale: 'en',
-        messages: localeData.en,
+        locale: _.isNil(storageLangauge) ? 'en' : storageLangauge,
+        messages: _.isNil(storageLangauge) ? localeData[`en`] : localeData[`${storageLangauge}`],
         switchLanguage: this.switchLanguage,
     };
 

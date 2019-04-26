@@ -5,7 +5,7 @@ import 'antd/dist/antd.less';
 import * as React from "react";
 import { hot } from 'react-hot-loader/root';
 import { FormattedMessage } from 'react-intl';
-import { HashRouter as Router } from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
 import './assets/scss/app.scss';
 import { IntlProviderWrapper } from './components/Language/LanguageContext';
 import LanguageSwitch from './components/Language/LanguageSwitch';
