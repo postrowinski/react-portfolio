@@ -3,6 +3,7 @@ import { IconProps } from 'antd/lib/icon';
 import * as _ from 'lodash';
 import * as React from 'react';
 import { FormattedMessage } from 'react-intl';
+import { useHandleResize } from '../../hooks/useHandleResize';
 import { Item } from './TimelineProgress.data';
 
 const { Item: TimeLineItem } = Timeline;
@@ -14,9 +15,13 @@ interface Props {
 
 declare type FunctionRenderDot = (dot?: IconProps) => JSX.Element;
 declare type FunctionRenderTimeLineItem = (item: Item, index: number) => JSX.Element;
+declare type Mode = 'alternate'| 'left';
 
 export const TimelineProgress: React.FC<Props> = (props: Props): JSX.Element => {
     const {data, messagesPrefix} = props;
+
+    const mode: Mode = useHandleResize() > 992 ? 'alternate' : 'left';
+
     const renderDot: FunctionRenderDot = (dot?: IconProps): JSX.Element => {
         if (_.isNil(dot)) {
             return undefined;
@@ -39,7 +44,7 @@ export const TimelineProgress: React.FC<Props> = (props: Props): JSX.Element => 
     };
 
     return (
-        <Timeline mode='alternate'>
+        <Timeline mode={mode}>
             {data.map((item: Item, index: number) => renderTimeLineItem(item, index))}
         </Timeline>
     );
