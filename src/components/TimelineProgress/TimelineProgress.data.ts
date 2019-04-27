@@ -3,7 +3,7 @@ import { IconProps } from "antd/lib/icon";
 export interface Item {
     date: string;
     dot?: IconProps;
-    color?: string;
+    color?: 'red' | 'green';
 }
 
 export const timelineProgressData: Item[] = [
@@ -118,5 +118,27 @@ export const timelineProgressData: Item[] = [
             },
             type: 'trophy'
         }
-    }
+    },
+    {
+        color: 'green',
+        date: '2018-01-10'
+    },
+    {
+        date: '2018-01-10 / 2018-06'
+    },
+    {
+        date: '2018-07'
+    },
+    {
+        date: '2018-07 - 2019-02'
+    },
+    {
+        date: '2018-10'
+    },
+    {
+        date: '2018-11'
+    },
+    {
+        date: '2019-03 / 2019-??'
+    },
 ];

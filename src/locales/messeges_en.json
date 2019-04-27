@@ -108,5 +108,12 @@
     "progress.15": "I'm buying my first courses in the Udemy website (with time there will be quite a lot of them)",
     "progress.16": "I have a lot of job interviews",
     "progress.17": "I have a job interview at Pentacomp Systemy Informatyczne S.A.",
-    "progress.18": "I get feedback from Pentacomp, that I have successfully passed the recruitment process and after agreeing on the terms of the contract, I agree to establish cooperation as a Front-end developer"
+    "progress.18": "I get feedback from Pentacomp, that I have successfully passed the recruitment process and after agreeing on the terms of the contract, I agree to establish cooperation as a Front-end developer",
+    "progress.19": "My first day at Pentacomp",
+    "progress.20": "I join the Java team that recently started to implement the project for Bank BGŻ BNP Paribas under the name ILegal, providing a workflow for bank lawyers. My main task is stylization of the project.",
+    "progress.21": "I am a co-presenter of the presentation entitled 'Angular vs React vs Vue', my part is a part of Angular and Vue",
+    "progress.22": "Together with the team, we join another team and jointly implement the LIMS project. This application is to provide workflow for GIOS employees in the matter of testing water samples. It uses such front-end technologies as React.js and TypeScript",
+    "progress.23": "TypeScript is becoming my favorite JavaScript feature",
+    "progress.24": "I'm starting to write first functionalities in Java and scripts in Liquibase",
+    "progress.25": "Together with the team, we are launching the project of the Surface Water Quality Portal. It is supposed to be a widely available application and should contain a CIEP publication on water quality in Poland. The application will use front-end technology such as React.js, TypeScript and React-Native."
 }
