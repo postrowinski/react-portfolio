@@ -78,7 +78,8 @@
     "intl": "^1.2.5",
     "react-flag-icon-css": "^1.0.25",
     "react-intl": "^2.8.0",
-    "react-router-dom": "4.3.1"
+    "react-router-dom": "4.3.1",
+    "use-debounce": "^2.0.0"
   },
   "homepage": "https://postrowinski.github.io/react-portfolio"
 }

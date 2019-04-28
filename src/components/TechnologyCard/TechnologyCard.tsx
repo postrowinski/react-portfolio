@@ -1,6 +1,7 @@
 import { Button, Card, Icon } from 'antd';
 import { ButtonType } from 'antd/lib/button';
 import * as React from 'react';
+import { useState } from 'react';
 import { FormattedMessage, InjectedIntlProps, injectIntl } from 'react-intl';
 
 const { Meta } = Card;
@@ -17,23 +18,19 @@ interface Props extends InjectedIntlProps {
     content: string;
 }
 
-interface State {
-    readMore: boolean;
-}
+declare type FunctionNoParamsVoid = () => void;
+declare type FunctionJSX = () => JSX.Element;
 
-class TechnologyCard extends React.Component<Props, State> {
-    public state: State = {
-        readMore: false
+const TechnologyCard: React.FC<Props> = (props: Props): JSX.Element => {
+    const { formatMessage } = props.intl;
+    const [readMore, setReadMore] = useState<boolean>(false);
+
+    const toggleReadMore: FunctionNoParamsVoid = (): void => {
+        setReadMore(!readMore);
     };
 
-    private toggleReadMore = (): void => {
-        this.setState((prevState: State) => ({
-            readMore: !prevState.readMore
-        }));
-    }
-
-    private renderImg = (alt: string, src: string): JSX.Element => {
-        const {formatMessage} = this.props.intl;
+    const renderImg: FunctionJSX = (): JSX.Element => {
+        const { alt, src } = props.img;
         return (
             <div style={{height: 280}}>
                 <img
@@ -47,23 +44,22 @@ class TechnologyCard extends React.Component<Props, State> {
                     }} />
             </div>
         );
-    }
+    };
 
-    private renderContent = (content: string): JSX.Element => (
+    const renderContent: FunctionJSX = (): JSX.Element => (
         <div style={{height: 280, display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
-            <FormattedMessage id={content} />
+            <FormattedMessage id={props.content} />
         </div>
-    )
+    );
 
-    private renderInfoButton = (): JSX.Element => {
-        const { readMore } = this.state;
+    const renderInfoButton: FunctionJSX = (): JSX.Element => {
         const buttonType: ButtonType = readMore ? 'danger' : 'primary';
         const iconType: string = readMore ? 'cross' : 'info-circle';
         return (
             <Button
                 type={buttonType}
                 size='large'
-                onClick={this.toggleReadMore}
+                onClick={toggleReadMore}
                 style={{
                     alignItems: 'center',
                     display: 'flex',
@@ -74,28 +70,22 @@ class TechnologyCard extends React.Component<Props, State> {
                 <Icon style={{fontSize: 22}} type={iconType} />
             </Button>
         );
-    }
+    };
 
-    public render(): JSX.Element {
-        const { content, description, img, title, intl} = this.props;
-        const { src, alt } = img;
-        const { readMore } = this.state;
-        const { formatMessage } = intl;
+    const cover: JSX.Element = readMore ? renderContent() : renderImg();
 
-        const cover: JSX.Element = readMore ? this.renderContent(content) : this.renderImg(alt, src);
-        return (
-            <Card
-                style={{ width: 270, marginRight: 12, marginBottom: 20 }}
-                cover={cover}
-                actions={[this.renderInfoButton()]}
-            >
-                <Meta
-                    title={formatMessage({id: title})}
-                    description={formatMessage({id: description})}
-                />
-            </Card>
-        );
-    }
-}
+    return (
+        <Card
+            style={{ width: 270, marginRight: 12, marginBottom: 20 }}
+            cover={cover}
+            actions={[renderInfoButton()]}
+        >
+            <Meta
+                title={formatMessage({id: props.title})}
+                description={formatMessage({id: props.description})}
+            />
+        </Card>
+    );
+};
 
-export default injectIntl(TechnologyCard);
+export default injectIntl<any>(TechnologyCard);
