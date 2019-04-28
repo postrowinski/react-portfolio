@@ -19,8 +19,9 @@ declare type Mode = 'alternate'| 'left';
 
 export const TimelineProgress: React.FC<Props> = (props: Props): JSX.Element => {
     const {data, messagesPrefix} = props;
+    const [getInnerWidth] = useHandleResize('innerWidth');
 
-    const mode: Mode = useHandleResize() > 992 ? 'alternate' : 'left';
+    const mode: Mode = getInnerWidth > 992 ? 'alternate' : 'left';
 
     const renderDot: FunctionRenderDot = (dot?: IconProps): JSX.Element => {
         if (_.isNil(dot)) {

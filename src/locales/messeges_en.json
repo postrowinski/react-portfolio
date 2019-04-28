@@ -4,7 +4,7 @@
     "footer": "Made by ",
     "nav.contact": "Contact",
     "nav.experience": "Experience",
-    "nav.home": "Home",
+    "nav.home": "Home page under construction",
     "nav.projects": "Projects",
     "nav.progress": "My progress",
     "title.experience": "Experience",
@@ -12,83 +12,83 @@
     "title.technologies.beginner": "Basic knowledge of technology / libraries",
 
     "card.javaScript.title": "JavaScript",   
-    "card.javaScript.description": "Description JavaScript",   
+    "card.javaScript.description": "The programming language used on websites",   
     "card.javaScript.content": "Content JavaScript",
 
     "card.javaScript.es6.title": "JavaScript ES6",   
-    "card.javaScript.es6.description": "Description JavaScript ES6",   
+    "card.javaScript.es6.description": "Otherwise called ECMAScript2015, JS stardard",   
     "card.javaScript.es6.content": "Content JavaScript ES6",
 
     "card.react.title": "React.js",   
-    "card.react.description": "description React.js",   
+    "card.react.description": "JavaScript library, which is used to create graphical interfaces of the application.",   
     "card.react.content": "content React.js",
 
     "card.typeScript.title": "TypeScript",   
-    "card.typeScript.description": "Description TypeScript",   
+    "card.typeScript.description": "It allows optional static typing",   
     "card.typeScript.content": "Content TypeScript",
 
     "card.react.ts.title": "React + TypeScript",   
-    "card.react.ts.description": "Description React + TypeScript",   
+    "card.react.ts.description": "The combination of both technologies allows greater clarity of the code and avoids the mass of errors already at the code production stage",   
     "card.react.ts.content": "Content React + TypeScript",
 
     "card.html.title": "HTML5",   
-    "card.html.description": "Description HTML5",   
+    "card.html.description": "Marker language",   
     "card.html.content": "Content HTML5",
 
     "card.git.title": "Git",   
-    "card.git.description": "Description Git",   
+    "card.git.description": "Version control system, especially useful for group work",   
     "card.git.content": "Content Git",
 
     "card.sass.title": "SASS/SCSS",   
-    "card.sass.description": "Description SASS/SCSS",   
+    "card.sass.description": "Sass is a preprocessor scripting language that is compiled into CSS",   
     "card.sass.content": "Content SASS/SCSS",
 
     "card.css.title": "CSS3",   
-    "card.css.description": "Description CSS3",   
+    "card.css.description": "It is used to describe the form of web page presentation",   
     "card.css.content": "Content CSS3",
 
     "card.rwd.title": "Responsive Web Design",   
-    "card.rwd.description": "Description RWD",   
+    "card.rwd.description": "The technique of page design, so that the layout automatically adjusts to the size of the browser window",   
     "card.rwd.content": "Content RWD",
 
     "card.bootstrap.title": "Bootstrap",   
-    "card.bootstrap.description": "Description Bootstrap",   
+    "card.bootstrap.description": "The CSS library contains a set of useful tools to help you create a graphical interface",   
     "card.bootstrap.content": "Content Bootstrap",
 
     "card.antd.title": "Ant Design - React",   
-    "card.antd.description": "Description Ant Design - React",   
+    "card.antd.description": "The React.js library contains a set of useful components to help you create a graphical interface",   
     "card.antd.content": "Content Ant Design - React",
 
     "card.java.title": "Java",   
-    "card.java.description": "Description Java",   
+    "card.java.description": "Class-based object-oriented programming language for general use",   
     "card.java.content": "Content Java",
 
     "card.vue.title": "Vue.js",   
-    "card.vue.description": "Description Vue.js",   
+    "card.vue.description": "JavaScript framework for building user interfaces",   
     "card.vue.content": "Content Vue.js",
 
     "card.angular.title": "Angular",   
-    "card.angular.description": "Description Angular",   
+    "card.angular.description": "Framework and platform for creating SPA, written in the TypeScript language",   
     "card.angular.content": "Content Angular",
 
     "card.jest.title": "Jest",   
-    "card.jest.description": "Description Jest",   
+    "card.jest.description": "JavaScript Testing Framework with an emphasis on simplicity",   
     "card.jest.content": "Content Jest",
 
     "card.react.native.title": "React-Native",   
-    "card.react.native.description": "Description React-Native",   
+    "card.react.native.description": "Mobile application framework for building graphical interfarts",   
     "card.react.native.content": "Content React-Native",
 
     "card.webpack.title": "Webpack",   
-    "card.webpack.description": "Description Webpack",   
+    "card.webpack.description": "It is a module bundler primarily for JavaScript",   
     "card.rwebpack.content": "Content Webpack",
 
     "card.sql.title": "SQL",   
-    "card.sql.description": "Description SQL",   
+    "card.sql.description": "Structured text of queries used to create, modify databases and retrieve data from databases",   
     "card.sql.content": "Content SQL",
 
     "card.liqui.base.title": "Liquibase",   
-    "card.liqui.base.description": "Description Liquibase",   
+    "card.liqui.base.description": "Database-independent library for tracking, managing and applying database schema changes",   
     "card.liqui.base.content": "Content Liquibase",
 
     "progress.1": "My first contact with the frontend",

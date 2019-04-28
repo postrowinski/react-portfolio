@@ -1,4 +1,5 @@
 import { Button, Drawer, Icon, Menu } from 'antd';
+import { IconProps } from 'antd/lib/icon';
 import { ClickParam } from 'antd/lib/menu';
 import * as React from "react";
 import { useState } from 'react';
@@ -9,7 +10,7 @@ import * as PATHS from './paths';
 interface IMenuItem {
     path: string;
     label: string;
-    icon?: string;
+    icon?: IconProps;
 }
 
 const navData: IMenuItem[] = [
@@ -25,10 +26,10 @@ const navData: IMenuItem[] = [
         label: 'nav.experience',
         path: PATHS.experience
     },
-    {
-        label: 'nav.projects',
-        path: PATHS.projects
-    },
+    // {
+    //     label: 'nav.projects',
+    //     path: PATHS.projects
+    // },
     {
         label: 'nav.contact',
         path: PATHS.contact
@@ -60,7 +61,7 @@ const AppMenu: React.FC<Props> = (props: Props): JSX.Element => {
         return (
             <MenuItem key={path} onClick={onClose}>
                 <Link to={path}>
-                    {icon && <Icon type={icon} />}
+                    {icon && <Icon {...icon} />}
                     <FormattedMessage id={label} />
                 </Link>
             </MenuItem>
@@ -68,14 +69,15 @@ const AppMenu: React.FC<Props> = (props: Props): JSX.Element => {
     };
 
     const renderMenu: FunctionRenderMenu = (type: 'horizontal' | 'drawer'): JSX.Element => {
+        const horizontalType: boolean = type === 'horizontal';
         return (
             <>
                 <Menu
                     onClick={handleClick}
                     selectedKeys={[current]}
-                    mode={type === 'horizontal' ? 'horizontal' : 'inline'}
-                    theme={type === 'horizontal' ? 'dark' : undefined}
-                    className={type === 'horizontal' ? 'horizontal-menu' : ''}
+                    mode={horizontalType ? 'horizontal' : 'inline'}
+                    theme={horizontalType ? 'dark' : undefined}
+                    className={horizontalType ? 'horizontal-menu' : ''}
                 >
                     {navData.map((item: IMenuItem): JSX.Element => renderMenuItem(item))}
                 </Menu>

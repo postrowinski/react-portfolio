@@ -4,7 +4,7 @@
     "footer": "Stworzona przez ",
     "nav.contact": "Kontakt",
     "nav.experience": "Doświadczenie",
-    "nav.home": "Strona główna",
+    "nav.home": "Strona w budowie",
     "nav.projects": "Projekty",
     "nav.progress": "Mój postęp",
     "title.experience": "Doświadczenie zawodowe",
@@ -12,87 +12,86 @@
     "title.technologies.beginner": "Podstawowa znajomość technologii / bibliotek",
 
     "card.javaScript.title": "JavaScript",   
-    "card.javaScript.description": "Opis JavaScript",   
+    "card.javaScript.description": "Język programowania stosowany na stronach internetowych",   
     "card.javaScript.content": "Treść JavaScript",
 
     "card.javaScript.es6.title": "JavaScript ES6",   
-    "card.javaScript.es6.description": "Opis JavaScript ES6",   
+    "card.javaScript.es6.description": "Inaczej zwany ECMAScript2015, stardard języka JS",   
     "card.javaScript.es6.content": "Treść JavaScript ES6",
 
-    
     "card.react.title": "React.js",   
-    "card.react.description": "Opis React.js",   
+    "card.react.description": "Biblioteka JavaScriptu, która służy do tworzenia interfejsów graficznych aplikacji.",   
     "card.react.content": "Treść React.js",
 
     "card.typeScript.title": "TypeScript",   
-    "card.typeScript.description": "Opis TypeScript",   
+    "card.typeScript.description": "Umożliwia on opcjonalne statyczne typowanie",   
     "card.typeScript.content": "Treść TypeScript",
 
     "card.react.ts.title": "React + TypeScript",   
-    "card.react.ts.description": "Opis React + TypeScript",   
+    "card.react.ts.description": "Połączenie obu tych technologii pozwala na większą przejrzystość kody i uniknięciu masy błędów już na etapie wytwarzania kodu",   
     "card.react.ts.content": "Treść React + TypeScript",
 
     "card.html.title": "HTML5",   
-    "card.html.description": "Opis HTML5",   
+    "card.html.description": "Jezyk znaczników",   
     "card.html.content": "Treść HTML5",
 
     "card.git.title": "Git",   
-    "card.git.description": "Opis Git",   
+    "card.git.description": "System kontroli wersji, szególnie przydadny do pracy w grupie",   
     "card.git.content": "Treść Git",
 
     "card.sass.title": "SASS/SCSS",   
-    "card.sass.description": "Opis SASS/SCSS",   
+    "card.sass.description": "Sass to preprocesorowy język skryptowy skompilowany do CSS",   
     "card.sass.content": "Treść SASS/SCSS",
 
     "card.css.title": "CSS3",   
-    "card.css.description": "Opis SASS/SCSS",   
-    "card.css.content": "Treść SASS/SCSS",
+    "card.css.description": "Służy do opisu formy prezentacji stron WWW",   
+    "card.css.content": "Treść CSS",
 
     "card.rwd.title": "Responsive Web Design",   
-    "card.rwd.description": "Opis RWD",   
+    "card.rwd.description": "Technika projektowania stron, tak aby układ dostosowywał się automatycznie do rozmiaru okna przeglądarki",   
     "card.rwd.content": "Treść RWD",
 
     "card.bootstrap.title": "Bootstrap",   
-    "card.bootstrap.description": "Opis Bootstrap",   
+    "card.bootstrap.description": "Biblioteka CSS, zawiera zestaw przydatnych narzędzi ułatwiających tworzenie interfejsu graficznego",   
     "card.bootstrap.content": "Treść Bootstrap",
 
     "card.antd.title": "Ant Design - React",   
-    "card.antd.description": "Opis Ant Design - React",   
+    "card.antd.description": "Biblioteka React.js, zawiera zestaw przydatnych komponentów ułatwiających tworzenie interfejsu graficznego",   
     "card.antd.content": "Treść Ant Design - React",
 
     "card.java.title": "Java",   
-    "card.java.description": "Opis Java",   
+    "card.java.description": "Oparty na klasach, obiektowy język programowania ogólnego zastosowania",   
     "card.java.content": "Treść Java",
 
     "card.vue.title": "Vue.js",   
-    "card.vue.description": "Opis Vue.js",   
+    "card.vue.description": "Framework JavaScriptu służący do budowania interfejsów użytkownika",   
     "card.vue.content": "Treść Vue.js",
 
     "card.angular.title": "Angular",   
-    "card.angular.description": "Opis Angular",   
+    "card.angular.description": "Framework i platforma do tworzenia SPA, napisany w języku TypeScript",   
     "card.angular.content": "Treść Angular",
 
     "card.jest.title": "Jest",   
-    "card.jest.description": "Opis Jest",   
+    "card.jest.description": "Framework JavaScriptu służący do testowania, z naciskiem na prostotę",   
     "card.jest.content": "Treść Jest",
 
     "card.react.native.title": "React-Native",   
-    "card.react.native.description": "Opis React-Native",   
+    "card.react.native.description": "Framework aplikacji mobilnych służący do budowania interfajsów graficznych",   
     "card.react.native.content": "Treść React-Native",
 
     "card.webpack.title": "Webpack",   
-    "card.webpack.description": "Opis Webpack",   
+    "card.webpack.description": "Jest to pakiet modułów głównie dla JavaScript",   
     "card.rwebpack.content": "Treść Webpack",
 
     "card.sql.title": "SQL",   
-    "card.sql.description": "Opis SQL",   
+    "card.sql.description": "Strukturalny język zapytań używany do tworzenia, modyfikowania baz danych oraz do umieszczania i pobierania danych z baz danych",   
     "card.sql.content": "Treść SQL",
 
     "card.liqui.base.title": "Liquibase",   
-    "card.liqui.base.description": "Opis Liquibase",   
+    "card.liqui.base.description": "Biblioteka niezależna od bazy danych do śledzenia, zarządzania i stosowania zmian schematu bazy danych",   
     "card.liqui.base.content": "Treść Liquibase",
 
-    "progress.1": "Moja pierwsza styczność z frontendwem",
+    "progress.1": "Moja pierwsza styczność z front-endem",
     "progress.2": "Pierwsze kroki w HTML5 i CSS3",
     "progress.3": "Moje Pierwsze mini projekty z wykorzystaniem HTML5 i CSS3",
     "progress.4": "Pierwsze kroki we frameworku CSSa - Bootstrap",

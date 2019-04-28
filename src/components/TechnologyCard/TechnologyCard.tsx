@@ -54,14 +54,13 @@ const TechnologyCard: React.FC<Props> = (props: Props): JSX.Element => {
 
     const renderInfoButton: FunctionJSX = (): JSX.Element => {
         const buttonType: ButtonType = readMore ? 'danger' : 'primary';
-        const iconType: string = readMore ? 'cross' : 'info-circle';
+        const iconType: 'cross' | 'info-circle' = readMore ? 'cross' : 'info-circle';
         return (
             <Button
                 type={buttonType}
                 size='large'
                 onClick={toggleReadMore}
                 style={{
-                    alignItems: 'center',
                     display: 'flex',
                     justifyContent: 'center',
                     width: 240
@@ -76,9 +75,10 @@ const TechnologyCard: React.FC<Props> = (props: Props): JSX.Element => {
 
     return (
         <Card
-            style={{ width: 270, marginRight: 12, marginBottom: 20 }}
+            style={{ width: 270, marginRight: 12, marginBottom: 20, display: 'flex', flexDirection: 'column' }}
             cover={cover}
             actions={[renderInfoButton()]}
+            bodyStyle={{flex: 1}}
         >
             <Meta
                 title={formatMessage({id: props.title})}
