@@ -7,15 +7,17 @@ html, body {
     color: $color-black;
 }
 
-.ant-layout {
-    display: block;
+.container-flex-centralized {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
 }
 
 .container {
     max-width: 1200px;
     padding: 0 20px;
     margin: 0 auto;
-    display: block;
 }
 
 .ant-layout-header {

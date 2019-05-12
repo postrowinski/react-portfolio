@@ -17,7 +17,7 @@ const { Header, Content, Footer } = Layout;
 const App: React.FC<{}> = (): JSX.Element => (
     <IntlProviderWrapper>
         <Router>
-            <Layout>
+            <Layout style={{minHeight: '100vh'}}>
                 <Header>
                     <div className='container'>
                         <Row type='flex' justify='space-between' align='middle'>
@@ -26,8 +26,13 @@ const App: React.FC<{}> = (): JSX.Element => (
                         </Row>
                     </div>
                 </Header>
-                <div style={{ background: '#F1F1F1'}}>
-                    <Content className='container' style={{minHeight: 'calc(100vh - 92px)'}}>
+                <div style={{ background: '#F1F1F1', flex: 1, display: 'flex' }}>
+                    <Content className='container'
+                        style={{
+                            display: 'flex',
+                            flexDirection: 'column'
+                        }}
+                    >
                         <Routing />
                     </Content>
                 </div>
