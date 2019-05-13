@@ -26,7 +26,7 @@ const App: React.FC<{}> = (): JSX.Element => (
                         </Row>
                     </div>
                 </Header>
-                <div style={{ background: '#F1F1F1', flex: 1, display: 'flex' }}>
+                <div style={{ background: '#F1F1F1', flex: 1, display: 'flex', position: 'relative' }}>
                     <Content className='container'
                         style={{
                             display: 'flex',

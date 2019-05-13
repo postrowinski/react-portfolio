@@ -1,10 +1,13 @@
 {
+    "home.title": "Cześć, jestem Przemek",
+    "home.sub.title": "Jestem front-end developerem w Pentacomp Systemy Informatyczne S.A.",
+
     "common.to.now": " do teraz",
     "experience.content": "Pentacomp Systemy informatyczne S.A.",
     "footer": "Stworzona przez ",
     "nav.contact": "Kontakt",
     "nav.experience": "Doświadczenie",
-    "nav.home": "Strona w budowie",
+    "nav.home": "Strona główna",
     "nav.projects": "Projekty",
     "nav.progress": "Mój postęp",
     "title.experience": "Doświadczenie zawodowe",
