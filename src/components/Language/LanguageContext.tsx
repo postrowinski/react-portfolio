@@ -1,5 +1,6 @@
 import * as _ from 'lodash';
 import * as React from "react";
+import { useState } from 'react';
 import {addLocaleData, IntlProvider} from "react-intl";
 
 // tslint:disable-next-line
@@ -17,57 +18,47 @@ export const localeData: LocalData = {
     pl: require('../../locales/messeges_pl.json')
 };
 
+declare type SwitchLanguage = (locale: string, messages: string) => void;
 export interface LanguageContext {
+    switchLanguage: SwitchLanguage;
     locale: string;
-    messages: string;
-    switchLanguage(locale: string, messages: string): void;
 }
 
-// tslint:disable-next-line:no-empty-interface
-interface State extends LanguageContext {}
-
-export const Context: React.Context<LanguageContext> = React.createContext({
-    locale: 'pl',
-    messages: localeData.pl,
-    switchLanguage: (locale: string, messages: string): void => { /* empty block */ }
-});
+export const Context: React.Context<LanguageContext> = React.createContext({} as LanguageContext);
 
 addLocaleData([...en, ...pl]);
+
+interface Props {
+    children: React.ReactNode;
+}
 
 const langaugeStorageKey: string = 'language';
 const storageLangauge: string = localStorage.getItem(langaugeStorageKey);
 
-class IntlProviderWrapper extends React.Component<{}, State> {
-    private switchLanguage = (locale: string, messages: string): void => {
-        this.setState({
-            locale,
-            messages,
-            switchLanguage: this.switchLanguage
-        });
-        localStorage.setItem(langaugeStorageKey, locale);
-    }
-
-    public state: State = {
-        locale: _.isNil(storageLangauge) ? 'en' : storageLangauge,
-        messages: _.isNil(storageLangauge) ? localeData[`en`] : localeData[`${storageLangauge}`],
-        switchLanguage: this.switchLanguage,
+const IntlProviderWrapper: React.FC<Props> = ({ children }: Props): JSX.Element => {
+    const defaultLocale: string = _.isNil(storageLangauge) ? 'en' : storageLangauge;
+    const defaultMessages: string = _.isNil(storageLangauge) ? localeData[`en`] : localeData[`${storageLangauge}`];
+    const [locale, setLocale] = useState<string>(defaultLocale);
+    const [messages, setMessages] = useState<string>(defaultMessages);
+    // tslint:disable-next-line:variable-name
+    const switchLanguage: SwitchLanguage = (_locale: string, _messages: string): void => {
+        setLocale(_locale);
+        setMessages(_messages);
+        localStorage.setItem(langaugeStorageKey, _locale);
     };
 
-    public render(): JSX.Element {
-        const { children } = this.props;
-        const { locale, messages } = this.state;
-        return (
-            <Context.Provider value={this.state}>
-                <IntlProvider
-                    key={locale}
-                    locale={locale}
-                    messages={messages}
-                >
-                    {children}
-                </IntlProvider>
-            </Context.Provider>
-        );
-    }
+    const ContextValues: LanguageContext = {
+        locale,
+        switchLanguage
+    };
+
+    return (
+        <Context.Provider value={ContextValues}>
+            <IntlProvider locale={locale} messages={messages}>
+                {children}
+            </IntlProvider>
+        </Context.Provider>
+    );
 }
 
 export { IntlProviderWrapper, Context as IntlContext };

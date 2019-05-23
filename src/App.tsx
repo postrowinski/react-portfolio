@@ -8,7 +8,7 @@ import { FormattedMessage } from 'react-intl';
 import { HashRouter as Router } from 'react-router-dom';
 import './assets/scss/app.scss';
 import { IntlProviderWrapper } from './components/Language/LanguageContext';
-import LanguageSwitch from './components/Language/LanguageSwitch';
+import { LanguageSwitch } from './components/Language/LanguageSwitch';
 import AppMenu from './components/Navigation/AppMenu';
 import { Routing } from './components/Navigation/Routing';
 
