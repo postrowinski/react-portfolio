@@ -25,9 +25,7 @@ const TechnologyCard: React.FC<Props> = (props: Props): JSX.Element => {
     const { formatMessage } = props.intl;
     const [readMore, setReadMore] = useState<boolean>(false);
 
-    const toggleReadMore: FunctionNoParamsVoid = (): void => {
-        setReadMore(!readMore);
-    };
+    const toggleReadMore: FunctionNoParamsVoid = (): void => setReadMore(!readMore);
 
     const renderImg: FunctionJSX = (): JSX.Element => {
         const { alt, src } = props.img;
@@ -41,13 +39,24 @@ const TechnologyCard: React.FC<Props> = (props: Props): JSX.Element => {
                         height: '100%',
                         objectFit: 'cover',
                         width: '100%'
-                    }} />
+                    }}
+                />
             </div>
         );
     };
 
     const renderContent: FunctionJSX = (): JSX.Element => (
-        <div style={{height: 280, display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+        <div
+            style={{
+                alignItems: 'center',
+                borderBottom: '1px solid #d9d9d9',
+                display: 'flex',
+                fontSize: 16,
+                height: 280,
+                justifyContent: 'center',
+                padding: '10px 15px'
+            }}
+        >
             <FormattedMessage id={props.content} />
         </div>
     );

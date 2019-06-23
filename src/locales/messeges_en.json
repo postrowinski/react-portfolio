@@ -16,79 +16,79 @@
 
     "card.javaScript.title": "JavaScript",   
     "card.javaScript.description": "The programming language used on websites",   
-    "card.javaScript.content": "Content JavaScript",
+    "card.javaScript.content": "I mastered JS in a stupa enabling the creation of advanced functionalities. In addition to JS, I also know such libraries as lodash, moment.js or jQuery, although I would prefer not to use the latter.",
 
     "card.javaScript.es6.title": "JavaScript ES6",   
     "card.javaScript.es6.description": "Otherwise called ECMAScript2015, JS stardard",   
-    "card.javaScript.es6.content": "Content JavaScript ES6",
+    "card.javaScript.es6.content": "I know all the used ES6 functions so much that I do not like using the ES5 syntax anymore",
 
     "card.react.title": "React.js",   
     "card.react.description": "JavaScript library, which is used to create graphical interfaces of the application.",   
-    "card.react.content": "content React.js",
+    "card.react.content": "I love to create a lot of small, simple, generic components, which later create larger components, etc. React.js has become my favorite library / framer since the version with hooks.",
 
     "card.typeScript.title": "TypeScript",   
     "card.typeScript.description": "It allows optional static typing",   
-    "card.typeScript.content": "Content TypeScript",
+    "card.typeScript.content": "My favorite feature JS, I type, I create interfaces, declare the types I can only get and I hate the type 'any', all the way to make the code self-documenting and clear.",
 
     "card.react.ts.title": "React + TypeScript",   
     "card.react.ts.description": "The combination of both technologies allows greater clarity of the code and avoids the mass of errors already at the code production stage",   
-    "card.react.ts.content": "Content React + TypeScript",
+    "card.react.ts.content": "React without typing would be a heavy management, which is why I think TypeScript in React is an indispensable element",
 
     "card.html.title": "HTML5",   
     "card.html.description": "Marker language",   
-    "card.html.content": "Content HTML5",
+    "card.html.content": "Nothing special just a set of tags, which in the vast majority I know together with their attributes.",
 
     "card.git.title": "Git",   
     "card.git.description": "Version control system, especially useful for group work",   
-    "card.git.content": "Content Git",
+    "card.git.content": "At first, I used commands from the terminal, but with time I moved to the Intelli-Interface (especially useful in conflicts). With both approaches, I have never encountered greater difficulties.",
 
     "card.sass.title": "SASS/SCSS",   
     "card.sass.description": "Sass is a preprocessor scripting language that is compiled into CSS",   
-    "card.sass.content": "Content SASS/SCSS",
+    "card.sass.content": "In scss I know variables, nesting + syntax, placeholders and maxins. I have not needed any more functionalities so far and I do not think they need them. As for Sass, I do not like the approach without braces and semicolons",
 
     "card.css.title": "CSS3",   
     "card.css.description": "It is used to describe the form of web page presentation",   
-    "card.css.content": "Content CSS3",
+    "card.css.content": "In css I do not recall the thing that I would not do, everything is a matter of time. When it comes to particulars, I know: positioning, flex, transition, transform, animation and of course more basic functions. I never used grid.",
 
     "card.rwd.title": "Responsive Web Design",   
     "card.rwd.description": "The technique of page design, so that the layout automatically adjusts to the size of the browser window",   
-    "card.rwd.content": "Content RWD",
+    "card.rwd.content": "The most interesting thing from sass / css, (except maybe for all kinds of animations). Sometimes it seems to me that I am too much for the creation of a fully responsive view.",
 
     "card.bootstrap.title": "Bootstrap",   
     "card.bootstrap.description": "The CSS library contains a set of useful tools to help you create a graphical interface",   
-    "card.bootstrap.content": "Content Bootstrap",
+    "card.bootstrap.content": "The last one I use less often, but I know most of the basic components + of course grid",
 
     "card.antd.title": "Ant Design - React",   
     "card.antd.description": "The React.js library contains a set of useful components to help you create a graphical interface",   
-    "card.antd.content": "Content Ant Design - React",
+    "card.antd.content": "I know well and often use as in both business and private projects",
 
     "card.java.title": "Java",   
     "card.java.description": "Class-based object-oriented programming language for general use",   
-    "card.java.content": "Content Java",
+    "card.java.content": "I know the basic level, when it comes to adding functionalities, my knowledge is based on copy + paste from other code snippets, but I have no problem reading the code associated with the REST API",
 
     "card.vue.title": "Vue.js",   
     "card.vue.description": "JavaScript framework for building user interfaces",   
-    "card.vue.content": "Content Vue.js",
+    "card.vue.content": "I used Vue.js for one project using CLI and smaller pairs using CDN. I like the mix of Angular and React",
 
     "card.angular.title": "Angular",   
     "card.angular.description": "Framework and platform for creating SPA, written in the TypeScript language",   
-    "card.angular.content": "Content Angular",
+    "card.angular.content": "Until recently, my favorite JS frameworks / libraries. I made a few mini projects in it and I like it, that a lot of functionality is natively supplied with TypeScript",
 
     "card.jest.title": "Jest",   
     "card.jest.description": "JavaScript Testing Framework with an emphasis on simplicity",   
-    "card.jest.content": "Content Jest",
+    "card.jest.content": "Useful, pleasant, simple (although not from the beginning)",
 
     "card.react.native.title": "React-Native",   
     "card.react.native.description": "Mobile application framework for building graphical interfarts",   
-    "card.react.native.content": "Content React-Native",
+    "card.react.native.content": "After getting to know this technology, I am not convinced of it, theoretically it is a react, but sometimes doing a simple thing is extremely complicated. In brief, I know the basics, but I do not like using it.",
 
     "card.webpack.title": "Webpack",   
     "card.webpack.description": "It is a module bundler primarily for JavaScript",   
-    "card.rwebpack.content": "Content Webpack",
+    "card.webpack.content": "From project to project, each configuration is getting faster and faster, although I still have to search for everything after the documentation.",
 
     "card.sql.title": "SQL",   
     "card.sql.description": "Structured text of queries used to create, modify databases and retrieve data from databases",   
-    "card.sql.content": "Content SQL",
+    "card.sql.content": "I can create basic CRUD scripts in XML and SQL",
 
     "card.liqui.base.title": "Liquibase",   
     "card.liqui.base.description": "Database-independent library for tracking, managing and applying database schema changes",   
