@@ -2,12 +2,12 @@ import * as _ from 'lodash';
 import { useEffect, useState } from 'react';
 import { useDebouncedCallback } from 'use-debounce';
 
-declare type FunctionUseHandleResize = (windowEvent: string) => any[];
+declare type FunctionUseHandleResize = (windowEvent: string) => number;
 declare type FunctionHandleResize = () => void;
 
-export const useHandleResize: FunctionUseHandleResize = (windowEvent: string): any[] => {
+export const useHandleResize: FunctionUseHandleResize = (windowEvent: string): number => {
     const handleResize: FunctionHandleResize = (): void => setValue(window[`${windowEvent}`]);
-    const [value, setValue] = useState<any>(window[`${windowEvent}`]);
+    const [value, setValue] = useState<string>(window[`${windowEvent}`]);
     const [handleResizeDebounce] = useDebouncedCallback(handleResize, 200);
 
     useEffect(() => {
@@ -16,5 +16,5 @@ export const useHandleResize: FunctionUseHandleResize = (windowEvent: string): a
             window.removeEventListener('resize',  handleResizeDebounce);
         };
     }, []);
-    return [value];
+    return +value;
 };

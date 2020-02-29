@@ -118,5 +118,10 @@
     "progress.22": "Together with the team, we join another team and jointly implement the LIMS project. This application is to provide workflow for GIOS employees in the matter of testing water samples. It uses such front-end technologies as React.js and TypeScript",
     "progress.23": "TypeScript is becoming my favorite JavaScript feature",
     "progress.24": "I'm starting to write first functionalities in Java and scripts in Liquibase",
-    "progress.25": "Together with the team, we are launching the project of the Surface Water Quality Portal. It is supposed to be a widely available application and should contain a CIEP publication on water quality in Poland. The application will use front-end technology such as React.js, TypeScript and React-Native."
+    "progress.25": "Together with the team, we are launching the project of the Surface Water Quality Portal. It is supposed to be a widely available application and should contain a CIEP publication on water quality in Poland. The application will use front-end technology such as React.js, TypeScript and React-Native.",
+    "progress.26": "I get to know React Hooks, in which I see a giant sub-podium. I also propagate knowledge in a team and introduce changes to the PJWP project",
+    "progress.27": "Correction of WCAG 2.0 errors after an audit by the Fundacja Widzialni for the PJWP project.",
+    "progress.28": "Obtaining the \"Site Without Barriers\" certificate from the Visible Foundation. It gives me tremendous satisfaction, because it is 100% my work and makes me realize that on the front-end I am able to do everything.",
+    "progress.29": "Together with the team, we are starting the implementation of the SPWD MX project - this is a sub module of a larger project for the Warsaw City Guard aimed at administering and collecting information from other modules. There is also a project 100% using React Hooks.",
+    "progress.30": "I significantly improve my work in TypeScript by creating much more Generally typed components. I am also starting to improve my skills in JEST tests, but the project is not too short to refine my skills"
 }

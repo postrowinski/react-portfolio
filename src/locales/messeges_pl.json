@@ -118,5 +118,10 @@
     "progress.22": "Razem z zespołęm dołączamy do innego zespołu i wspólnie realizujemy projekt LIMS. Aplikacja ta ma zapewniać workflow pracownikom GIOŚ w kwestii badania próbek wody. Wykorzystuję ona takie technologie front-endowe jak React.js i TypeScript",
     "progress.23": "TypeScript staję się moją ulubioną cechą JavaScriptu",
     "progress.24": "Zaczynam pisać pierwsze funkcjonalności w Java i skrypty w Liquibase",
-    "progress.25": "Razem z zespołem zaczynamy realizację projektu Portalu Jakości Wód Powierzchniowych. Ma to być aplikacja ogólno dostępna i ma zawierać publikację GIOŚ o jakości wód w Polsce. W aplikacji zastosowanę zostaną technologię front-endowe takie jak React.js, TypeScript i React-Native."
+    "progress.25": "Razem z zespołem zaczynamy realizację projektu Portalu Jakości Wód Powierzchniowych. Ma to być aplikacja ogólno dostępna i ma zawierać publikację GIOŚ o jakości wód w Polsce. W aplikacji zastosowanę zostaną technologię front-endowe takie jak React.js, TypeScript i React-Native.",
+    "progress.26": "Poznaję React Hooks, w których widzę gigantyczny podencjał. Wiedzę propaguję również w zespole i wprowadzam zmiany w projekcie PJWP",
+    "progress.27": "Poprawa błedów WCAG 2.0 po przeprowadzeniu audytu przez Fundację Widzialni dla projektu PJWP.",
+    "progress.28": "Uzyskanie certyfikatu \"Strona bez barier\" od Fundacji Widzialni. Sprawia mi to ognomną satysfakcję, ponieważ jest to w 100% moje dzieło i uświadamia mnie, że na front-endzie jestem w stanie zrobić wszystko.",
+    "progress.29": "Razem z zespołem zaczynamy realizację projektu SPWD MX - jest to sub moduł większego projektu dla Warszawskiej Straży Miejskiej mający na celu administrowanie i zbieranie informacji z pozostałych modułów. Jest również projekt w 100% wykorzystujący React Hooks",
+    "progress.30": "Znacząco podnoszę swoję w TypeScripcie tworząc znacznie więcej Generycznie typowanych komponentów. Zaczynam również podnosić swoję umiejętności w JEST przy testach hooksów, jednak projekt nie zbyt krótki na dopracowanie swoich umiejętności"
 }

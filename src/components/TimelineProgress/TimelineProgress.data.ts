@@ -139,6 +139,36 @@ export const timelineProgressData: Item[] = [
         date: '2018-11'
     },
     {
-        date: '2019-03 / 2019-??'
+        date: '2019-03 / 2019-07'
+    },
+    {
+        date: '2019-04'
+    },
+    {
+        date: '2019-07 / 2019-11',
+        color: 'green'
+    },
+    {
+        date: '2019-11-28',
+        dot: {
+            style: {
+                color: 'goldenrod',
+                fontSize: 32
+            },
+            type: 'trophy'
+        }
+    },
+    {
+        date: '2019-12 / 2020-1',
+    },
+    {
+        date: '2019-12',
+        dot: {
+            style: {
+                color: 'green',
+                fontSize: 28
+            },
+            type: 'rise'
+        },
     },
 ];
