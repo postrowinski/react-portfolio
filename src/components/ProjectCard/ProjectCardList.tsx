@@ -14,7 +14,7 @@ export const ProjectCardList: React.FC<Props> = (props: Props): JSX.Element => {
         <>
             <AppHeader title={title} />
             <Row type='flex' gutter={16} justify='center'>
-                {data.map((card: CardData) => <ProjectCard {...card} />)}
+                {data.map((card: CardData, index: number) => <ProjectCard key={index} {...card} />)}
             </Row>
         </>
     );

@@ -177,7 +177,7 @@ export const beginnerKnowTech: TechCard[] = [
         description: 'card.sql.description',
         img: {
             alt: 'card.sql.title',
-            src: 'http://www.logospng.com/images/44/how-to-write-sql-44347.png'
+            src: 'https://thumbs.dreamstime.com/b/sql-bazy-danych-ikony-loga-projekt-ui-app-lub-ux-96841969.jpg'
         },
         title: 'card.sql.title'
     },
