@@ -26,10 +26,10 @@ const navData: IMenuItem[] = [
         label: 'nav.experience',
         path: PATHS.experience
     },
-    // {
-    //     label: 'nav.projects',
-    //     path: PATHS.projects
-    // },
+    {
+        label: 'nav.projects',
+        path: PATHS.projects
+    },
     {
         label: 'nav.contact',
         path: PATHS.contact

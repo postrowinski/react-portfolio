@@ -4,7 +4,7 @@ import Contact from "../../pages/Contact/Contact";
 import { Experience } from "../../pages/Experience/Experience";
 import Home from "../../pages/Home/Home";
 import { Progress } from '../../pages/Progress/Progess';
-import Projects from "../../pages/Projects/Projects";
+import { Projects } from "../../pages/Projects/Projects";
 import * as PATHS from './paths';
 
 export const Routing: React.FC<{}> = (): JSX.Element => (
