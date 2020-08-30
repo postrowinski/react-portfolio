@@ -1,5 +1,9 @@
 import * as React from "react";
-import { privateProjectData, publiclyNotAvaibleProjectData, publiclyAvaibleProjectData } from '../../components/ProjectCard/ProjectCard.data';
+import {
+    privateProjectData,
+    publiclyAvaibleProjectData,
+    publiclyNotAvaibleProjectData
+} from '../../components/ProjectCard/ProjectCard.data';
 import { ProjectCardList } from '../../components/ProjectCard/ProjectCardList';
 
 export const Projects: React.FC<{}> = (): JSX.Element => {
@@ -10,4 +14,4 @@ export const Projects: React.FC<{}> = (): JSX.Element => {
             <ProjectCardList title='projects.header.private.projects' data={privateProjectData} />
         </>
     );
-} 
+};

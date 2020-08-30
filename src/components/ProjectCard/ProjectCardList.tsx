@@ -1,7 +1,7 @@
-import * as React from 'react';
 import { Row } from 'antd';
+import * as React from 'react';
 import { AppHeader } from '../Header/Header';
-import ProjectCard, { CardData } from './ProjectCard';
+import { CardData, ProjectCard } from './ProjectCard';
 
 interface Props {
     title: string;
@@ -18,4 +18,4 @@ export const ProjectCardList: React.FC<Props> = (props: Props): JSX.Element => {
             </Row>
         </>
     );
-}
+};

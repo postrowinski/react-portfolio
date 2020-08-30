@@ -1,6 +1,6 @@
-import * as React from 'react';
 import * as _ from 'lodash';
-import { InjectedIntlProps, injectIntl } from 'react-intl';
+import * as React from 'react';
+import { injectIntl, useIntl } from 'react-intl';
 
 declare type RenderLinks = () => JSX.Element;
 declare type RenderTechnologies = () => JSX.Element;
@@ -17,13 +17,14 @@ export interface CardData {
     linkToCode?: string;
 }
 
-interface Props extends CardData, InjectedIntlProps {}
+// tslint:disable-next-line: no-empty-interface
+interface Props extends CardData {}
 
 const classPrefix: 'project-card' = 'project-card';
 
-const ProjectCard: React.FC<Props> = (props: Props): JSX.Element => {
-    const {img, techStack, linkToCode, linkToWeb, intl} = props;
-    const { formatMessage } = intl;
+export const ProjectCard: React.FC<Props> = (props: Props): JSX.Element => {
+    const {img, techStack, linkToCode, linkToWeb } = props;
+    const { formatMessage } = useIntl();
     const renderTechnologies: RenderTechnologies = (): JSX.Element =>  {
         return (
             <div className={`${classPrefix}__technologies-container`}>
@@ -32,15 +33,15 @@ const ProjectCard: React.FC<Props> = (props: Props): JSX.Element => {
                 </h3>
                 <div className={`${classPrefix}__tech-stack`}>{formatMessage({id: techStack})}</div>
             </div>
-        )
-    }
+        );
+    };
 
     const renderLinks: RenderLinks = (): JSX.Element =>  {
         const linkClassName: string = `${classPrefix}__link`;
         return (
             <div className={`${classPrefix}__links-container`}>
-                {!_.isNil(linkToCode) && 
-                    <a 
+                {!_.isNil(linkToCode) &&
+                    <a
                         href={linkToCode}
                         className={linkClassName}
                         target='_blank'
@@ -48,18 +49,18 @@ const ProjectCard: React.FC<Props> = (props: Props): JSX.Element => {
                         {formatMessage({id: 'projects.card.link.full.code'})}
                     </a>
                 }
-                {!_.isNil(linkToWeb) && 
-                    <a 
+                {!_.isNil(linkToWeb) &&
+                    <a
                         href={linkToWeb}
-                        className={linkClassName} 
+                        className={linkClassName}
                         target='_blank'
                     >
                         {formatMessage({id: 'projects.card.link.live'})}
                     </a>
                 }
             </div>
-        )
-    }
+        );
+    };
 
     return (
         <div className={`${classPrefix}__container`}>
@@ -70,7 +71,5 @@ const ProjectCard: React.FC<Props> = (props: Props): JSX.Element => {
                 {renderTechnologies()}
             </div>
         </div>
-    )
-} 
-
-export default injectIntl<any>(ProjectCard);
+    );
+};

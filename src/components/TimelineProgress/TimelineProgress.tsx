@@ -19,7 +19,7 @@ declare type Mode = 'alternate'| 'left';
 
 export const TimelineProgress: React.FC<Props> = (props: Props): JSX.Element => {
     const {data, messagesPrefix} = props;
-    const getInnerWidth = useHandleResize('innerWidth');
+    const getInnerWidth: number = useHandleResize('innerWidth');
 
     const mode: Mode = getInnerWidth > 992 ? 'alternate' : 'left';
 

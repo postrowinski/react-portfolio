@@ -1,7 +1,7 @@
 import * as React from "react";
 import { FormattedMessage } from "react-intl";
 
-const Home: React.FC<{}> = (): JSX.Element => (
+export const Home: React.FC<{}> = (): JSX.Element => (
     <div className='home__container'>
         <h1 className='home__title'>
             <FormattedMessage id='home.title' />
@@ -11,5 +11,3 @@ const Home: React.FC<{}> = (): JSX.Element => (
         </h2>
     </div>
 );
-
-export default Home;

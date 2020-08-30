@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { useContext } from 'react';
 import FlagIconFactory, { FlagIcon } from 'react-flag-icon-css';
-import { IntlContext, LanguageContext, localeData } from "./LanguageContext";
+import { Context as IntlContext, LanguageContext, localeData } from "./LanguageContext";
 
 const Flag: typeof FlagIcon = FlagIconFactory(React, {useCssModules: false});
 

@@ -1,7 +1,7 @@
 import { Row } from "antd";
 import * as React from "react";
 import { AppHeader } from "../../components/Header/Header";
-import TechnologyCard from '../../components/TechnologyCard/TechnologyCard';
+import { TechnologyCard } from '../../components/TechnologyCard/TechnologyCard';
 import { beginnerKnowTech, goodKnowTech, TechCard } from '../../components/TechnologyCard/TechnologyCard.data';
 
 declare type FunctionRenderCards = (cards: TechCard[], title: string) => JSX.Element;

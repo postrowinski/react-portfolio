@@ -2,7 +2,7 @@ import { Button, Card, Icon } from 'antd';
 import { ButtonType } from 'antd/lib/button';
 import * as React from 'react';
 import { useState } from 'react';
-import { FormattedMessage, InjectedIntlProps, injectIntl } from 'react-intl';
+import { FormattedMessage, useIntl } from 'react-intl';
 
 const { Meta } = Card;
 
@@ -11,7 +11,7 @@ interface Image {
     alt: string;
 }
 
-interface Props extends InjectedIntlProps {
+interface Props {
     img: Image;
     title: string;
     description: string;
@@ -21,8 +21,8 @@ interface Props extends InjectedIntlProps {
 declare type FunctionNoParamsVoid = () => void;
 declare type FunctionJSX = () => JSX.Element;
 
-const TechnologyCard: React.FC<Props> = (props: Props): JSX.Element => {
-    const { formatMessage } = props.intl;
+export const TechnologyCard: React.FC<Props> = (props: Props): JSX.Element => {
+    const { formatMessage } = useIntl();
     const [readMore, setReadMore] = useState<boolean>(false);
 
     const toggleReadMore: FunctionNoParamsVoid = (): void => setReadMore(!readMore);
@@ -70,6 +70,7 @@ const TechnologyCard: React.FC<Props> = (props: Props): JSX.Element => {
                 size='large'
                 onClick={toggleReadMore}
                 style={{
+                    alignItems: 'center',
                     display: 'flex',
                     justifyContent: 'center',
                     width: 240
@@ -96,5 +97,3 @@ const TechnologyCard: React.FC<Props> = (props: Props): JSX.Element => {
         </Card>
     );
 };
-
-export default injectIntl<any>(TechnologyCard);

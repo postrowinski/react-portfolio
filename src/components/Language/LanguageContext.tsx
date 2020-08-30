@@ -1,16 +1,13 @@
 import * as _ from 'lodash';
 import * as React from "react";
 import { useState } from 'react';
-import {addLocaleData, IntlProvider} from "react-intl";
+import {IntlProvider} from "react-intl";
 
-// tslint:disable-next-line
-const en = require('react-intl/locale-data/en');
-// tslint:disable-next-line
-const pl = require('react-intl/locale-data/pl');
+declare type MessageRecord = Record<string, string>;
 
 interface LocalData {
-    en: string;
-    pl: string;
+    en: MessageRecord;
+    pl: MessageRecord;
 }
 
 export const localeData: LocalData = {
@@ -18,15 +15,13 @@ export const localeData: LocalData = {
     pl: require('../../locales/messeges_pl.json')
 };
 
-declare type SwitchLanguage = (locale: string, messages: string) => void;
+declare type SwitchLanguage = (locale: string, messages: MessageRecord) => void;
 export interface LanguageContext {
     switchLanguage: SwitchLanguage;
     locale: string;
 }
 
 export const Context: React.Context<LanguageContext> = React.createContext({} as LanguageContext);
-
-addLocaleData([...en, ...pl]);
 
 interface Props {
     children: React.ReactNode;
@@ -35,13 +30,14 @@ interface Props {
 const langaugeStorageKey: string = 'language';
 const storageLangauge: string = localStorage.getItem(langaugeStorageKey);
 
-const IntlProviderWrapper: React.FC<Props> = ({ children }: Props): JSX.Element => {
+export const IntlProviderWrapper: React.FC<Props> = ({ children }: Props): JSX.Element => {
     const defaultLocale: string = _.isNil(storageLangauge) ? 'en' : storageLangauge;
-    const defaultMessages: string = _.isNil(storageLangauge) ? localeData[`en`] : localeData[`${storageLangauge}`];
+    // tslint:disable-next-line: max-line-length
+    const defaultMessages: MessageRecord = _.isNil(storageLangauge) ? localeData[`en`] : localeData[`${storageLangauge}`];
     const [locale, setLocale] = useState<string>(defaultLocale);
-    const [messages, setMessages] = useState<string>(defaultMessages);
+    const [messages, setMessages] = useState<MessageRecord>(defaultMessages);
     // tslint:disable-next-line:variable-name
-    const switchLanguage: SwitchLanguage = (_locale: string, _messages: string): void => {
+    const switchLanguage: SwitchLanguage = (_locale: string, _messages: MessageRecord): void => {
         setLocale(_locale);
         setMessages(_messages);
         localStorage.setItem(langaugeStorageKey, _locale);
@@ -59,6 +55,4 @@ const IntlProviderWrapper: React.FC<Props> = ({ children }: Props): JSX.Element 
             </IntlProvider>
         </Context.Provider>
     );
-}
-
-export { IntlProviderWrapper, Context as IntlContext };
+};

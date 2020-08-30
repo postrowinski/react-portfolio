@@ -1,10 +1,11 @@
 import { Button, Drawer, Icon, Menu } from 'antd';
 import { IconProps } from 'antd/lib/icon';
 import { ClickParam } from 'antd/lib/menu';
+import { Location } from 'history';
 import * as React from "react";
 import { useState } from 'react';
-import { FormattedMessage, InjectedIntlProps, injectIntl } from 'react-intl';
-import { Link, RouteComponentProps, withRouter } from "react-router-dom";
+import { FormattedMessage } from 'react-intl';
+import { Link, useLocation } from "react-router-dom";
 import * as PATHS from './paths';
 
 interface IMenuItem {
@@ -38,16 +39,14 @@ const navData: IMenuItem[] = [
 
 const  { Item: MenuItem } = Menu;
 
-interface Props extends RouteComponentProps<{}>, InjectedIntlProps {
-}
-
 declare type FunctionNoParamsVoid = () => void;
 declare type FunctionHandleClick = (e: ClickParam) => void;
 declare type FunctionRenderMenuItem = (menuItem: IMenuItem) => JSX.Element;
 declare type FunctionRenderMenu = (type: 'horizontal' | 'drawer') => JSX.Element;
 
-const AppMenu: React.FC<Props> = (props: Props): JSX.Element => {
-    const [current, setCurrent] = useState<string>(props.history.location.pathname);
+export const AppMenu: React.FC<{}> = (): JSX.Element => {
+    const location: Location = useLocation();
+    const [current, setCurrent] = useState<string>(location.pathname);
     const [drawerVisible, setDrawerVisible] = useState<boolean>(false);
 
     const showDrawer: FunctionNoParamsVoid = (): void => setDrawerVisible(true);
@@ -109,5 +108,3 @@ const AppMenu: React.FC<Props> = (props: Props): JSX.Element => {
         </>
     );
 };
-
-export default withRouter<any>(injectIntl<any>(AppMenu));

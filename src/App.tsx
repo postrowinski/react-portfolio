@@ -9,7 +9,7 @@ import { HashRouter as Router } from 'react-router-dom';
 import './assets/scss/app.scss';
 import { IntlProviderWrapper } from './components/Language/LanguageContext';
 import { LanguageSwitch } from './components/Language/LanguageSwitch';
-import AppMenu from './components/Navigation/AppMenu';
+import { AppMenu } from './components/Navigation/AppMenu';
 import { Routing } from './components/Navigation/Routing';
 
 const { Header, Content, Footer } = Layout;
