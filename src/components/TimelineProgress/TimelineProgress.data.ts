@@ -159,7 +159,7 @@ export const timelineProgressData: Item[] = [
         }
     },
     {
-        date: '2019-12 / 2020-8',
+        date: '2019-12 / 2020-11',
     },
     {
         date: '2019-12',
@@ -171,4 +171,14 @@ export const timelineProgressData: Item[] = [
             type: 'rise'
         },
     },
+    {
+        date: '2020-01 / 2020-04',
+    },
+    {
+        date: '2020-07',
+    },
+    {
+        color: 'green',
+        date: '2020-07 / 2020-08'
+    }
 ];
