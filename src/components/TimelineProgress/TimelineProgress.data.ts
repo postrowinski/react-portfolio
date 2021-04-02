@@ -180,5 +180,32 @@ export const timelineProgressData: Item[] = [
     {
         color: 'green',
         date: '2020-07 / 2020-08'
-    }
+    },
+    {
+        date: '2020-09 / 2020-10'
+    },
+    {
+        color: 'green',
+        date: '2020-11 / 2021-03',
+    },
+    {
+        date: '2020-12',
+        dot: {
+            style: {
+                color: 'green',
+                fontSize: 32
+            },
+            type: 'rise'
+        },
+    },
+    {
+        date: '2021-03',
+        dot: {
+            style: {
+                color: 'goldenrod',
+                fontSize: 36
+            },
+            type: 'trophy'
+        }
+    },
 ];

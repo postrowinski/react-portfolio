@@ -91,7 +91,7 @@ export const goodKnowTech: TechCard[] = [
         description: 'card.css.description',
         img: {
             alt: 'card.css.title',
-            src: 'https://img.freedisc.pl/photo/24/2/l/css3-logo-large-jpeg.png'
+            src: 'https://i.pinimg.com/originals/e4/3e/4c/e43e4cd41ddffc21d2e6600dfca20306.jpg'
         },
         title: 'card.css.title'
     },
