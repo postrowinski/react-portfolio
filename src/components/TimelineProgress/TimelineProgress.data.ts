@@ -208,4 +208,17 @@ export const timelineProgressData: Item[] = [
             type: 'trophy'
         }
     },
+    {
+        color: "green",
+        date: '2021-04'
+    },
+    {
+        date: '2021-04 / 2021-07'
+    },
+    {
+        date: '2021-07 / 2021-10'
+    },
+    {
+        date: '2021-07 / 2021-10'
+    },
 ];
